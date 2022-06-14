@@ -1,6 +1,6 @@
 
 import './App.css';
-import { FormikComponent } from './components/FormikComponent';
+import { FormikForm } from './components/FormikForm/FormikForm';
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <FormikComponent />
+        <FormikForm />
       </header>
     </div>
   );
