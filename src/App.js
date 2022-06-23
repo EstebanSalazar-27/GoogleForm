@@ -4,7 +4,7 @@ import { FormikForm } from './components/FormikForm/FormikForm';
 
 
 function App() {
-
+console.log("app render")
 
 
   return (

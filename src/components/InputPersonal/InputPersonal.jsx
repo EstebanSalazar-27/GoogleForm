@@ -1,12 +1,13 @@
-import React from 'react'
+import React,{memo} from 'react'
 import { ControlErrorMessage } from '../ControlErrorsMessage/ControlErrorMessage'
 import { Field } from 'formik'
-export const InputPersonal = ({ name, placeholder, id, type, label}) => {
+export const InputPersonal = memo(({label, ...props}) => {
+    console.log("input personal render")
     return (
         <>
             <label htmlFor="lastname">{label}</label>
-            <Field name={name} placeholder={placeholder} id={id} type={type} />
-            <h6 className='error-message'><ControlErrorMessage name={name} /></h6>
+            <Field {...props} />
+            <h6 className='error-message'><ControlErrorMessage name={props.name} /></h6>
         </>
     )
-}
+})
